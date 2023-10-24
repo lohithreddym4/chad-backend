@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+router.use(cors());
 const Chat = require('../Models/WorldChat');
 
 router.use(express.json());
