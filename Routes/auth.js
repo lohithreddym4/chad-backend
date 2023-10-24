@@ -7,6 +7,7 @@ const jwt = require('jsonwebtoken');
 const jwtSecret = process.env.secret
 const fetchuser = require('../middleware/fetchuser');
 router.use(express.json());
+const cors = require('cors');
 router.use(cors());
 
 router.post('/create-user', [
